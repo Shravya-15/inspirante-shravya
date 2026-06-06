@@ -62,3 +62,5 @@ JWT authentication is required for protected routes.
 All API endpoints are prefixed with /api/.
 Events are displayed in ascending order of date.
 Event capacity restrictions are enforced on the backend.
+
+
