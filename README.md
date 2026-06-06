@@ -36,6 +36,7 @@ Create a .env file in the root directory and configure it using the variables sh
 
 ### 3. Start Server
 node server.js
+
 The server will run on:
 http://localhost:3000
 
@@ -48,10 +49,12 @@ The application will be accessible in your browser.
 ### Sample data includes:
 # Admin Account
 Username: admin
+
 Password: inspirante2026
 
 # Student Accounts
 Username: asha.rao
+
 Password: student123
 Additional student accounts are also included for testing event registrations.
 
