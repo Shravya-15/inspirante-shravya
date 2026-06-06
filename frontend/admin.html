@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>Admin Dashboard</h1>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+        <h2>Create Event</h2>
+
+        <form id="eventForm">
+
+            <input
+                type="text"
+                id="event_name"
+                placeholder="Event Name"
+                required>
+
+            <input
+                type="date"
+                id="event_date"
+                required>
+
+            <input
+                type="text"
+                id="venue"
+                placeholder="Venue"
+                required>
+
+            <input
+                type="number"
+                id="capacity"
+                placeholder="Capacity"
+                required>
+
+            <button type="submit">
+                Create Event
+            </button>
+
+        </form>
+
+        <h2>Available Events</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                    <th>Capacity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="eventTable">
+            </tbody>
+
+        </table>
+
+        <h2>Event Statistics</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Capacity</th>
+                    <th>Registered</th>
+                    <th>Fill %</th>
+                </tr>
+            </thead>
+
+            <tbody id="statsTable">
+            </tbody>
+
+        </table>
+
+       <div id="registrationSection" style="display:none;">
+
+    <h2>Event Registrations</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Registration Date</th>
+            </tr>
+        </thead>
+
+        <tbody id="registrationList">
+        </tbody>
+
+    </table>
+
+</div>
+    </div>
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

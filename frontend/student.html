@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>Student Dashboard</h1>
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+        <h2>Available Events</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="eventTable">
+
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <h2>My Registrations</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="registrationTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="js/student.js"></script>
+
+</body>
+
+</html>
